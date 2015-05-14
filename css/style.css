@@ -1,0 +1,56 @@
+body{
+	background-image: url("../images/bg.jpg");
+	margin-top:0px;
+}
+topo{
+	position: absolute;
+	left:28%;
+}
+
+iconesMenu{
+	position: absolute;
+	left: 22%;
+	top: 34%;
+}
+
+clientes:hover{
+	background-image: url("../images/hover.png");
+	background-position: inherit;
+	background-repeat: no-repeat;
+	padding-top: 105px;
+}
+
+entrada:hover{
+	background-image: url("../images/hover.png");
+	background-position: inherit;
+	background-repeat: no-repeat;
+	padding-top: 105px;
+}
+
+saida:hover{
+	background-image: url("../images/hover.png");
+	background-position: inherit;
+	background-repeat: no-repeat;
+	padding-top: 105px;
+}
+
+lavagem:hover{
+	background-image: url("../images/hover.png");
+	background-position: inherit;
+	background-repeat: no-repeat;
+	padding-top: 105px;
+}
+
+relatorios:hover{
+	background-image: url("../images/hover.png");
+	background-position: inherit;
+	background-repeat: no-repeat;
+	padding-top: 105px;
+}
+
+sair:hover{
+	background-image: url("../images/hover.png");
+	background-position: inherit;
+	background-repeat: no-repeat;
+	padding-top: 105px;
+}

@@ -1,0 +1,75 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="client/style.css">
+	<title>Car Wash Control System</title>
+	<script src="client/jquery-1.11.1.min.js"></script>
+	<script src="client/scripts.js"></script>
+</head>
+<body>
+	<topo>
+		<a href="../user.html"><img src="../images/topo2.png"></a>
+	</topo>
+
+	<window>
+		<img src="client/addclient.png" id="addclient">
+		<form id="form" class="form_clientes" action="server/envia_clientes.php" method="post" enctype="multipart/form-data">
+			<fieldset>
+
+				<legend>Cadastro de Clientes</legend>
+
+				<fieldset class="dados">
+					<label>
+						<p class="label">Nome</p>
+						<input type="text" id="txtNome" name="txtNome" class="txtNome" required="required">
+					</label>
+
+					<label>
+						<p class="label">Endereço</p>
+						<input type="text" id="txtEndereco" name="txtEndereco" class="txtEndereco" required="required">
+					</label>
+					
+					<label>
+						<p class="label">E-Mail</p>
+						<input type="text" id="txtEmail" name="txtEmail" class="txtEmail">
+					</label>
+
+					<label>
+						<p class="label">Telefone</p>
+						<input type="text" id="txtTelefone" name="txtTelefone" class="txtTelefone" required="required">
+					</label>
+
+					<label>
+						<p class="label">CPF</p>
+						<input type="text" id="txtCpf" name="txtCpf" class="txtCpf" required="required">
+					</label>
+					
+					<local>
+						<label>
+							<p class="label">Bairro</p>
+							<input type="text" id="txtBairro" name="txtBairro" class="txtBairro" required="required">
+						</label>
+
+						<label>
+							<p class="label">Cidade</p>
+							<input type="text" id="txtCidade" name="txtCidade" class="txtCidade" required="required">
+						</label>
+
+						<label>
+							<p class="label">Estado</p>
+							<input type="text" id="txtEstado" name="txtEstado" class="txtEstado" required="required">
+						</label>
+					</local>
+					
+				</fieldset>
+				
+				<div class="botoes">
+					<input type="submit" value="Cadastrar" id="btnSalvar" >
+					<input type="reset" value="Limpar" id="limpar">
+				</div>
+
+			</fieldset>
+		</form>
+	</window>
+</body>
+</html>

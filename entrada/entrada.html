@@ -1,0 +1,67 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="client/style.css">
+	<title>Car Wash Control System</title>
+</head>
+<body>
+	<topo>
+	<a href="../user.html"><img src="../images/topo2.png"></a>
+	</topo>
+	<window>
+		<form id="form" class="form_entrada" action="server/envia_orcamento.php" method="post" enctype="multipart/form-data">
+            <legend>Entrada de Serviços</legend>
+            <fieldset class="dados">
+                
+                <label for="clientes" class="label">Cliente<p></p></label>
+                <select name="txtCliente" id="txtCliente" class="txt" required="required">
+                </select>
+
+                <label>
+                    <p class="label">Veículo</p>
+                    <select name="txtVeiculo" id="veiculo" class="txt" required="required" placeholder="txtVeiculo">
+                        <option value=""></option>
+                        <option value="1">Bicicleta</option>
+                        <option value="2">Moto Pequena (até 250CC)</option>
+                        <option value="3">Moto Grande</option>
+                        <option value="4">Moto Com Acessórios</option>
+                        <option value="5">Triciculo / Quadriciculo</option>
+                        <option value="6">Carro Pequeno</option>
+                        <option value="7">Carro Grande</option>
+                        <option value="8">Van</option>
+                        <option value="9">Ônibus</option>
+                        <option value="10">Caminhão</option>
+                    </select>
+                </label>
+
+                <label>
+                    <p class="label">Serviço</p>
+                    <select name="txtServico" id="txtServico" class="txt" required="required" placeholder="txtServico">
+                        <option value=""></option>
+                        <option value="ducha">Ducha</option>
+                        <option value="simples">Lavagem Simples</option>
+                        <option value="completa">Lavagem Completa</option>
+                        <option value="higienizacao">Higienização</option>
+                    </select>
+                </label>
+
+                <label>
+                    <p class="label">Placa</p>
+                    <input type="text" id="txtPlaca" name="txtPlaca" class="txt">
+                </label>
+
+                <div class="botoes">
+                   <input type="submit" value="Cadastrar" id="btnSalvar" >
+                   <input type="reset" value="Limpar" id="limpar">
+                </div>
+                
+            </fieldset>
+		</form>
+	</window>
+    
+    <script src="client/jquery-1.11.1.min.js"></script>
+    <script src="client/scripts.js"></script>
+    <script src="client/combox.js"></script>
+    
+</body>
+</html>
