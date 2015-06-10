@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	background-image: url("../../images/bg.jpg");
+	font-family: Tahoma, sans-serif;
+	color: #ccc;
+}
+
+topo {
+	position: relative;
+	left: 41%;
+	top: 10px;
+	bottom: 10px;
+}
+
+#form {
+	background-image: url("../../images/frame.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	font-size: 13px;
+	color: black;
+
+	margin-top: 15px;
+	margin-left: 200px;
+	margin-right: 200px;
+	padding-top: 35px;
+	padding-left: 10px;
+	padding-right: 20px;
+	line-height: 30px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+Legend {
+	font-size: 20px;
+	font-weight: 500;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+
+#reportsImg{
+	position: absolute;
+	left:67%;
+	top: 195px;
+	bottom: 10px;
+	width: 130px;
+	height: 130px;
+}
+
+#btnBuscar {
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border: 1px solid #B5B5B5;
+    border-radius: 4px;
+    margin: 50 0 0 0;
+}
+
+#btnBuscar:hover{
+	border: 1px solid gray;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.txt {
+	margin-top: 2px;
+	margin-bottom: 40px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 7px;
+	width: 330px;
+	border: 2;
+	font-size: 13.5px;
+	border: 1px solid #B5B5B5;
+	background-color: #ECEDED;
+	color: #1C1C1C;
+	border-radius: 4px;
+}
+
+.dados {
+	margin-left: 10px;
+}
+
+#tabela{
+    margin-top: 25px;
+    margin-left: 200px;
+    padding: 0;
+}
+
+table {
+    color: black;
+    border: blue;
+}  
+
+table {
+    font: 13px Tahoma;
+    color: black;
+    background: #ECEEED;
+    border-radius: 4px;  
+    width: 953px;
+}
+
+th {
+    text-align: left;   
+    padding: 7 5 7 5;
+    background-color: #B9CEF7;
+    border-left: 1px solid #B5B5B5;
+    border-bottom: 1px solid #B5B5B5;
+    border-radius: 3px; 
+}
+
+td {
+    padding: 3 1 4 5;
+    border-left: 1px solid #B5B5B5;
+    border-bottom: 1px solid #B5B5B5;
+}
+
+tr:nth-child(even) {
+    background-color: #DFDFDF; 
+}

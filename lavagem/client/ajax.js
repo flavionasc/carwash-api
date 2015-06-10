@@ -1,7 +1,4 @@
-    
-/**
- * Função para criar um objeto XMLHTTPRequest
- */
+//Função para criar um objeto XMLHTTPRequest
 function CriaRequest() {
     try{
         request = new XMLHttpRequest();        
@@ -25,23 +22,15 @@ function CriaRequest() {
         return request;
 }
 
-
-
-/**
- * Função para enviar os dados
-*/
 function getDados() {
-    
-    // Declaração de Variáveis
-    var nome   = "Allan";
-    var result = document.getElementById("Resultado");
+    var nome;
+    var result = document.getElementById("tabela-orcamentos");
     var xmlreq = CriaRequest();
     
-    // Exibi a imagem de progresso
-    result.innerHTML = '<img src="Progresso1.gif"/>';
+    result.innerHTML = '<img src="lavagem/client/progress.gif"/>';
     
     // Monta a requisição
-    xmlreq.open("GET", "contato.php?txtnome=" + nome, true);
+    xmlreq.open("GET", "lavagem/server/busca.php", true);
     
     // Atribui uma função para ser executada sempre que houver uma mudança de estado
     xmlreq.onreadystatechange = function(){

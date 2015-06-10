@@ -1,19 +1,17 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link type="text/css" rel="stylesheet" href="client/style.css">
+	<link type="text/css" rel="stylesheet" href="clientes/client/style.css">
 	<title>Car Wash Control System</title>
-	<script src="client/jquery-1.11.1.min.js"></script>
-	<script src="client/scripts.js"></script>
 </head>
 <body>
 	<topo>
-		<a href="../user.html"><img src="../images/topo2.png"></a>
+		<a href="user.html"><img src="images/topo2.png"></a>
 	</topo>
 
 	<window>
-		<img src="client/addclient.png" id="addclient">
-		<form id="form" class="form_clientes" action="server/envia_clientes.php" method="post" enctype="multipart/form-data">
+		<img src="clientes/client/addclient.png" id="addclient">
+		<form id="form" class="form_clientes" action="clientes/server/envia_clientes.php" method="post" enctype="multipart/form-data">
 			<fieldset>
 
 				<legend>Cadastro de Clientes</legend>
@@ -71,5 +69,10 @@
 			</fieldset>
 		</form>
 	</window>
+    
+    <script src="jquery-1.11.1.min.js"></script>
+	<script src="clientes/client/scripts.js"></script>
+    <script src="valida_session/checar_session.js"></script>
+    
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
 header('Content-type: text/json');
 
-include('pdo.php');
+include('../../db_connect/pdo.php');
 
 $consulta = $conexao_pdo->prepare("SELECT id, nome FROM cliente ORDER BY nome");
 $consulta->execute();

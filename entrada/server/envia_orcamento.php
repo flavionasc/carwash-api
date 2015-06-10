@@ -8,10 +8,10 @@ foreach ( $_POST as $chave => $valor ) {
 	$$chave = $valor;
 }
 
-include('pdo.php');
+include('../../db_connect/pdo.php');
 
 $prepara = $conexao_pdo->prepare("
-	INSERT INTO `carwashdb`.`orcamento` (
+	INSERT INTO `u227980510_cwash`.`orcamento` (
 		`cliente`,
 		`veiculo`,
 		`servico`,
@@ -71,3 +71,4 @@ if ( $verifica ) {
 	
 	exit;
 }
+?>

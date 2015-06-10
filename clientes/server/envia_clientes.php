@@ -40,10 +40,10 @@ if (
 	exit;
 }
 
-include('pdo.php');
+include('../../db_connect/pdo.php');
 
 $prepara = $conexao_pdo->prepare("
-	INSERT INTO `carwashdb`.`cliente` (
+	INSERT INTO `u227980510_cwash`.`cliente` (
 		`nome`,
 		`endereco`,
 		`email`,

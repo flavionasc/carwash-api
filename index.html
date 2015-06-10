@@ -1,17 +1,22 @@
 <html>
 <meta charset="UTF-8">
-<link type="text/css" rel="stylesheet" href="css/style2.css">
+<link type="text/css" rel="stylesheet" href="css/style_login.css">
 <head>
 	<title>Car Wash Control System</title>
 </head>
 <body>
-    <form id="form-log">
-        <img src="images/cw.png" id="addclient">
+    <form id="form-log" class="form-log" method="post" action="index/login.php" onsubmit="fazer_login();">
+        <img src="images/cw.png">
         <p>Usuário</p>
-        <input type="text" name="user" required="required" class="txt">
+        <input type="text" name="login" id="login" required="required" class="txt" placeholder="Usuário">
         <p>Senha</p>
-        <input type="password" name="user" required="required" class="txt">
-        <input type="submit" name="login" id="entrar" value="Entrar">
+        <input type="password" name="senha" id="senha" required="required" class="txt" placeholder="*********">
+        
+        <input type="submit" name="entrar" id="entrar" value="Entrar">
     </form>
+    
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="index/scripts.js"></script>
+    
 </body>
 </html>

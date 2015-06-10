@@ -1,15 +1,15 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link type="text/css" rel="stylesheet" href="client/style.css">
+	<link type="text/css" rel="stylesheet" href="entrada/client/style.css">
 	<title>Car Wash Control System</title>
 </head>
 <body>
 	<topo>
-	<a href="../user.html"><img src="../images/topo2.png"></a>
+	<a href="user.html"><img src="images/topo2.png"></a>
 	</topo>
 	<window>
-		<form id="form" class="form_entrada" action="server/envia_orcamento.php" method="post" enctype="multipart/form-data">
+		<form id="form" class="form_entrada" action="" method="post" enctype="multipart/form-data">
             <legend>Entrada de Serviços</legend>
             <fieldset class="dados">
                 
@@ -19,7 +19,7 @@
 
                 <label>
                     <p class="label">Veículo</p>
-                    <select name="txtVeiculo" id="veiculo" class="txt" required="required" placeholder="txtVeiculo">
+                    <select name="txtVeiculo" id="veiculo" class="txt" required="required">
                         <option value=""></option>
                         <option value="1">Bicicleta</option>
                         <option value="2">Moto Pequena (até 250CC)</option>
@@ -36,7 +36,7 @@
 
                 <label>
                     <p class="label">Serviço</p>
-                    <select name="txtServico" id="txtServico" class="txt" required="required" placeholder="txtServico">
+                    <select name="txtServico" id="txtServico" class="txt" required="required">
                         <option value=""></option>
                         <option value="ducha">Ducha</option>
                         <option value="simples">Lavagem Simples</option>
@@ -51,7 +51,7 @@
                 </label>
 
                 <div class="botoes">
-                   <input type="submit" value="Cadastrar" id="btnSalvar" >
+                   <input type="submit" value="Cadastrar" id="btnSalvar" onclick="salvar();">
                    <input type="reset" value="Limpar" id="limpar">
                 </div>
                 
@@ -59,9 +59,10 @@
 		</form>
 	</window>
     
-    <script src="client/jquery-1.11.1.min.js"></script>
-    <script src="client/scripts.js"></script>
-    <script src="client/combox.js"></script>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="entrada/client/scripts.js"></script>
+    <script src="entrada/client/combox.js"></script>
+    <script src="valida_session/checar_session.js"></script>
     
 </body>
 </html>

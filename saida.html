@@ -1,0 +1,43 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="saida/client/style.css">
+	<title>Car Wash Control System</title>
+</head>
+<body>
+	<topo>
+	<a href="user.html"><img src="images/topo2.png"></a>
+	</topo>
+	<window>
+		<form id="form" class="form_finaliza" action="" method="post" enctype="multipart/form-data">
+            <legend>Saída de Serviços</legend>
+            <fieldset class="dados">
+                
+                <label>
+                    <p class="label">Entre com o número do orçamento:</p>
+                    <input type="number" id="txtNum" name="txtNum" class="txt">
+                </label>
+                <br><br>
+                
+                <label>
+                    <select name="txtOpc" id="txtOpc" class="txt" required="required" placeholder="txtOpc">
+                        <option value="3">Finalizar Orçamento</option>
+                        <option value="2">Cancelar Orçamento</option>
+                    </select>
+                </label>
+                
+                <div class="botoes">
+                    <input type="submit" name="finalizar" value="Salvar" id="btnFinalizar" onclick="salvar();">
+                </div>  
+                
+                <div class="recebe_dados"></div>
+                
+		</form>    
+	</window>
+    
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="saida/client/scripts.js"></script>
+    <script src="valida_session/checar_session.js"></script>
+    
+</body>
+</html>

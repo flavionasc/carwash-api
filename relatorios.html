@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<link type="text/css" rel="stylesheet" href="relatorios/client/style.css">
+<head>
+	<title>Car Wash Control System</title>
+</head>
+<body>
+	<topo>
+		<a href="adm.html"><img src="images/topo2.png"></a>
+	</topo>
+	<window>
+		<img src="relatorios/client/reports.png" id="reportsImg">
+		<form id="form" class="form_relatorio" action="relatorios/server/relatorio.php" method="post" enctype="multipart/form-data">				
+            <fieldset class="dados">
+                <legend>Relatórios</legend>
+                <select name="opcRelatorio" id="opcRelatorio" class="txt" required="required">
+                    <option value=""></option>
+                    <option value="1">Clientes Cadastrados</option>
+                    <option value="2">Total de Vendas Diárias</option>
+                    <option value="3">Listagem de Serviços Cancelados</option>
+                    <option value="4">Listagem de Serviços Finalizados</option>
+                </select>
+                <div class="botoes">
+                    <input type="submit" name="buscar" value="Gerar Relatório" id="btnBuscar">
+                </div>                
+            </fieldset>
+		</form>
+        <div id="tabela"></div>
+        </div>
+	</window>
+    
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="relatorios/client/scripts.js"></script>
+    <script src="valida_session/checar_session.js"></script>
+    
+</body>
+</html>
