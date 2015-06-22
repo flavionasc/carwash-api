@@ -1,7 +1,7 @@
 <?php
 include('../../db_connect/pdo.php');
 
-
+$data=date("Y-m-d");
 $consulta = $conexao_pdo->prepare("SELECT O.numero AS num, O.placa AS placa, C.nome AS cliente, V.nome AS veiculo, O.servico AS servico, O.valor AS                 valor
             FROM orcamento O INNER JOIN veiculo V
             ON O.veiculo = V.id INNER JOIN cliente C

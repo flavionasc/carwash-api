@@ -13,6 +13,9 @@ switch ($_POST['opcRelatorio']){
     case 4:
         relatorioServicosFinalizados();   
         die();
+    case 5:
+        relatorioPercentualRealizados();
+        die();
     default:
         die();
     
@@ -153,4 +156,36 @@ function relatorioClientesCadastrados(){
     }
     echo $return.="</tbody></table>";
 }
+
+function relatorioPercentualRealizados(){
+    include('../../db_connect/pdo.php');
+    $consulta = $conexao_pdo->prepare("SELECT COUNT(servico) AS qtde FROM orcamento GROUP BY servico");
+    $consulta->execute();
+    $result = $consulta;
+    $percent = ""; 
+
+    $consultaTotal = $conexao_pdo->prepare("SELECT COUNT(servico) AS total FROM orcamento");
+    $consultaTotal->execute();
+    $resultTotal = $consultaTotal->fetch(PDO::FETCH_ASSOC);
+    $aux = utf8_encode($resultTotal["total"]);
+    sleep(1);
+    $img = '<img src="http://chart.apis.google.com/chart?cht=p&chd=t:';
+    $return = "$img";
+    $flag = true;
+    while ($linha = $result->fetch(PDO::FETCH_ASSOC)) {
+        if ($flag){
+            $return.= utf8_encode($linha["qtde"]);
+            $percent.= number_format((utf8_encode($linha["qtde"])/$aux) * 100,2,",",".") . '%';
+        } else {
+            $return.= "," . utf8_encode($linha["qtde"]);
+            $percent.= "|" . number_format((utf8_encode($linha["qtde"])/$aux) * 100,2,",",".") . '%';
+        }
+        $flag = false;
+    }
+    $return.= "&chs=600x300&chl=";
+    $return.= $percent;
+
+    echo $return.= '&chdl=Ducha|Higienização|Lavagem Completa|Lavagem Simples"/>';
+}
+
 ?>

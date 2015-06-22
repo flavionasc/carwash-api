@@ -11,7 +11,7 @@ foreach ( $_POST as $chave => $valor ) {
 include('../../db_connect/pdo.php');
 
 $prepara = $conexao_pdo->prepare("
-	INSERT INTO `u227980510_cwash`.`orcamento` (
+	INSERT INTO `carwashdb`.`orcamento` (
 		`cliente`,
 		`veiculo`,
 		`servico`,

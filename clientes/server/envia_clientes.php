@@ -43,7 +43,7 @@ if (
 include('../../db_connect/pdo.php');
 
 $prepara = $conexao_pdo->prepare("
-	INSERT INTO `u227980510_cwash`.`cliente` (
+	INSERT INTO `carwashdb`.`cliente` (
 		`nome`,
 		`endereco`,
 		`email`,
