@@ -10,20 +10,22 @@
 	</topo>
 
 	<window>
-		<img src="clientes/client/addclient.png" id="addclient">
-		<form id="form" class="form_clientes" action="clientes/server/excluir_clientes.php" method="post" enctype="multipart/form-data">
+		<img src="clientes/client/excluirclient.png" id="addclient">
+		<form id="form" class="form_clientes" action="" method="post" enctype="multipart/form-data">
 			<fieldset>
 
 				<legend>Excluir Clientes</legend>
-				<fieldset class="dados">
-                    <br><br/>					
+				<fieldset class="dados">	
 			        <label for="clientes" class="label">Escolha o cliente para a exclusão:<br><br/></label>
                         <select name="txtCliente" id="txtCliente" class="txt" required="required">
                     </select>
+                    <br><br/>
+                    <p>Atenção! <br><br/>
+                       Ao excluir um cliente, todos os seus respectivos orçamentos também serão excluídos!</p>
 				</fieldset>
 				
 				<div class="botaoExcluir">
-					<input type="submit" value="Excluir" id="btnExcluir" >
+					<input type="submit" value="Excluir" id="btnExcluir" onclick="excluir();">
 				</div>
 
 			</fieldset>

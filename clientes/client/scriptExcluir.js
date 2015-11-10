@@ -1,4 +1,4 @@
-function salvar(){  
+function excluir(){  
     $('.form_clientes').submit(function() {
         $.ajax({
             url: 'clientes/server/excluir_clientes.php',
