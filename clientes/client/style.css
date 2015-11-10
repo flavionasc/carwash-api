@@ -41,7 +41,7 @@ legend {
 }
 
 /*Formatação dos campos de texto*/
-#txtNome, #txtTelefone, #txtCpf, #txtEndereco, #txtBairro, #txtCidade, #txtEstado, #txtEmail{
+#txtNome, #txtTelefone, #txtCpf, #txtEndereco, #txtBairro, #txtCidade, #txtEstado, #txtEmail, #txtCliente{
 	margin-top: 2px;
 	margin-bottom: 2px;
 	padding-top: 7px;
@@ -56,7 +56,7 @@ legend {
 	border-radius: 4px;
 }
 
-#txtNome:hover, #txtTelefone:hover, #txtCpf:hover, #txtEndereco:hover, #txtBairro:hover, #txtCidade:hover, #txtEstado:hover, #txtEmail:hover{
+#txtNome:hover, #txtTelefone:hover, #txtCpf:hover, #txtEndereco:hover, #txtBairro:hover, #txtCidade:hover, #txtEstado:hover, #txtEmail:hover, #txtCliente:hover{
 	border: 1px solid gray;
 	transition: all 0.2s;
     -ms-transition: all 0.2s;
@@ -107,11 +107,16 @@ local{
     -moz-transition: all 0.2s;
 }
 
-
 .botoes{
 	margin-top: 48px;
 	margin-bottom: 73px;
-	margin-left: 325px;
+	margin-left: 275px;
+}
+
+.botaoExcluir{
+	margin-top: 48px;
+	margin-bottom: 73px;
+	margin-left: 8px;
 }
 
 #addclient{

@@ -1,0 +1,39 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="clientes/client/style.css">
+	<title>Car Wash Control System</title>
+</head>
+<body>
+	<topo>
+		<a href="user.html"><img src="images/topo2.png"></a>
+	</topo>
+
+	<window>
+		<img src="clientes/client/addclient.png" id="addclient">
+		<form id="form" class="form_clientes" action="clientes/server/excluir_clientes.php" method="post" enctype="multipart/form-data">
+			<fieldset>
+
+				<legend>Excluir Clientes</legend>
+				<fieldset class="dados">
+                    <br><br/>					
+			        <label for="clientes" class="label">Escolha o cliente para a exclusão:<br><br/></label>
+                        <select name="txtCliente" id="txtCliente" class="txt" required="required">
+                    </select>
+				</fieldset>
+				
+				<div class="botaoExcluir">
+					<input type="submit" value="Excluir" id="btnExcluir" >
+				</div>
+
+			</fieldset>
+		</form>
+	</window>
+    
+    <script src="jquery-1.11.1.min.js"></script>
+	<script src="clientes/client/scriptExcluir.js"></script>
+    <script src="clientes/client/combox.js"></script>
+    <script src="valida_session/checar_session.js"></script>
+    
+</body>
+</html>
