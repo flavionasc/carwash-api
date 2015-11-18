@@ -7,7 +7,7 @@ if ( ! isset( $_POST ) || empty( $_POST ) ) {
 foreach ( $_POST as $chave => $valor ) {
     $$chave = $valor;
 }
-
+//excluir todos os dados do cliente.
 include('../../db_connect/pdo.php');
     
 $excluirOrcamentos = $conexao_pdo->prepare("DELETE FROM `carwashdb`.`orcamento` WHERE `orcamento`.`cliente` = ".$txtCliente);
