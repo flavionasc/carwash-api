@@ -1,14 +1,16 @@
 function excluir(){  
-    $('.form_clientes').submit(function() {
-        $.ajax({
-            url: 'clientes/server/excluir_clientes.php',
-            type: 'POST',
-            data: $('.form_clientes').serialize(),
-            async: false,
-            success: function(data) {
-                alert ('Cliente excluído com sucesso!');
-            }
-        });
-        return true;
-    }); 
+    var form = document.querySelector('form');
+    decisao = confirm("Deseja Continuar?");
+    if (decisao){
+        $('.form_clientes').submit(function() {
+            $.ajax({
+                type: 'DELETE',
+                url: 'api/index.php/delete/' + form.txtCliente.value,
+                success: function(response) {
+                }
+            });
+            alert ("Cliente Excluído!");
+        }); 
+    }   
 }
+
