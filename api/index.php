@@ -13,10 +13,10 @@ $app->delete('/delete/:id', function($id) use ( $app ) {
  
     include('../db_connect/pdo.php');
     
-    $excluirOrcamentos = $conexao_pdo->prepare("DELETE FROM `carwashdb`.`orcamento` WHERE `orcamento`.`cliente` = ".$id);
+    $excluirOrcamentos = $conexao_pdo->prepare("DELETE FROM `u927522891_cwash`.`orcamento` WHERE `orcamento`.`cliente` = ".$id);
     $excluirOrcamentos->execute();
 
-    $excluirCliente = $conexao_pdo->prepare("DELETE FROM `carwashdb`.`cliente` WHERE `cliente`.`id` = ".$id);
+    $excluirCliente = $conexao_pdo->prepare("DELETE FROM `u927522891_cwash`.`cliente` WHERE `cliente`.`id` = ".$id);
     
     $verifica = $excluirCliente->execute();
     

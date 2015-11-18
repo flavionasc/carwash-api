@@ -1,8 +1,8 @@
 <?php
 
-$base_dados = 'carwashdb';
-$usuario_bd = 'root';
-$senha_bd   = '';
+$base_dados = 'u927522891_cwash';
+$usuario_bd = 'u927522891_root';
+$senha_bd   = 'carwash';
 $host_db    = 'localhost';
 $charset_db = 'utf8';
 $conexao_pdo = null;
