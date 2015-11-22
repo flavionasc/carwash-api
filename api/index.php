@@ -13,8 +13,6 @@ $app->get('/', function() use ( $app ) {
 //adcionar cliente.
 $app->post('/adcionaCliente/', function() use ( $app ) {
     
-    include('.../db_connect/pdo.php');
-    
     $clienteJson = $app->request()->getBody();
     $newcliente = json_decode($clienteJson, true);
     if($newCliente) {
