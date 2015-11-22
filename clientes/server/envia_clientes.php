@@ -1,5 +1,5 @@
 <?php
-// Se não postar nada
+/* Se não postar nada
 if ( ! isset( $_POST ) || empty( $_POST ) ) {
 	
 	// Mensagem para o usuário
@@ -76,5 +76,5 @@ if ( $verifica ) {
 } else {
 	echo 'Erro ao enviar dados.';
 	
-	exit;
+	exit;*/
 }
